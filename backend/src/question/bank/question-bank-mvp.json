@@ -1,0 +1,380 @@
+{
+  "version": "glbti-question-bank-v1.0",
+  "language": "ko-KR",
+  "recommendedLength": {
+    "minChars": 100,
+    "targetMinChars": 300,
+    "targetMaxChars": 500,
+    "maxChars": 1200
+  },
+  "anchors": [
+    {
+      "id": "description",
+      "name": "묘사",
+      "description": "공간, 사물, 풍경, 상태 등을 자유롭게 표현하게 하는 앵커",
+      "questions": [
+        {
+          "id": "DESC_001",
+          "anchor": "description",
+          "prompt": "한 사람이 처음 와 보는 장소에 들어섰습니다. 그곳이 어떤 곳인지, 무엇이 눈에 들어오는지 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "place",
+            "first-impression"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 0.4,
+            "po": 1.3,
+            "ca": 1.2,
+            "gb": 0.5
+          }
+        },
+        {
+          "id": "DESC_002",
+          "anchor": "description",
+          "prompt": "평소 자주 보던 장소가 오늘은 어딘가 다르게 느껴집니다. 무엇이 달라 보이는지 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "familiar-place",
+            "change"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 0.5,
+            "po": 1.2,
+            "ca": 1.1,
+            "gb": 0.7
+          }
+        },
+        {
+          "id": "DESC_003",
+          "anchor": "description",
+          "prompt": "한 인물이 책상이나 선반 위에 놓인 물건 하나를 한동안 바라보고 있습니다. 그 장면을 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "object",
+            "observation"
+          ],
+          "weights": {
+            "sl": 0.9,
+            "re": 0.6,
+            "po": 1.3,
+            "ca": 1.3,
+            "gb": 0.5
+          }
+        },
+        {
+          "id": "DESC_004",
+          "anchor": "description",
+          "prompt": "사람들이 모두 떠난 뒤의 공간에 한 사람만 남아 있습니다. 주변의 모습을 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "empty-space",
+            "after-event"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 0.5,
+            "po": 1.3,
+            "ca": 1.2,
+            "gb": 0.8
+          }
+        },
+        {
+          "id": "DESC_005",
+          "anchor": "description",
+          "prompt": "창밖이나 문밖으로 보이는 풍경이 평소와 조금 다릅니다. 인물이 바라보는 장면을 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "scenery",
+            "observation"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 0.4,
+            "po": 1.4,
+            "ca": 1.1,
+            "gb": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "대화",
+      "description": "인물 간의 상호작용과 감정 전달 방식을 자연스럽게 드러내는 앵커",
+      "questions": [
+        {
+          "id": "DIAL_001",
+          "anchor": "dialogue",
+          "prompt": "두 사람이 오랜만에 마주쳤습니다. 두 사람의 관계와 지금의 분위기는 자유롭게 정하고, 대화를 중심으로 장면을 써주세요.",
+          "tags": [
+            "neutral",
+            "reunion",
+            "two-characters"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.3,
+            "po": 0.8,
+            "ca": 0.6,
+            "gb": 0.8
+          }
+        },
+        {
+          "id": "DIAL_002",
+          "anchor": "dialogue",
+          "prompt": "한 사람이 다른 사람에게 작은 부탁을 하려고 합니다. 부탁의 내용과 두 사람의 관계는 자유롭게 정해 대화를 써주세요.",
+          "tags": [
+            "neutral",
+            "request",
+            "two-characters"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.2,
+            "po": 0.7,
+            "ca": 0.7,
+            "gb": 0.6
+          }
+        },
+        {
+          "id": "DIAL_003",
+          "anchor": "dialogue",
+          "prompt": "두 사람이 같은 일을 두고 서로 다른 생각을 가지고 있습니다. 누구도 명백히 틀린 것은 아닙니다. 두 사람의 대화를 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "disagreement",
+            "two-characters"
+          ],
+          "weights": {
+            "sl": 1.1,
+            "re": 1.3,
+            "po": 0.7,
+            "ca": 0.8,
+            "gb": 0.7
+          }
+        },
+        {
+          "id": "DIAL_004",
+          "anchor": "dialogue",
+          "prompt": "한 사람이 평소와 조금 다른 행동을 하고 있고, 다른 사람이 그 이유를 묻습니다. 이후의 대화를 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "question",
+            "subtext"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.4,
+            "po": 0.8,
+            "ca": 0.6,
+            "gb": 0.7
+          }
+        },
+        {
+          "id": "DIAL_005",
+          "anchor": "dialogue",
+          "prompt": "함께 시간을 보내던 두 사람이 이제 각자 다른 곳으로 가야 합니다. 상황과 관계를 자유롭게 정해 마지막 대화를 써주세요.",
+          "tags": [
+            "neutral",
+            "parting",
+            "two-characters"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.3,
+            "po": 0.8,
+            "ca": 0.6,
+            "gb": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "event",
+      "name": "사건",
+      "description": "예상하지 못한 변화나 사건이 발생했을 때 서술의 진행 방식과 해석 방향을 보는 앵커",
+      "questions": [
+        {
+          "id": "EVNT_001",
+          "anchor": "event",
+          "prompt": "평소와 다름없이 하던 일이 예상과 다른 방향으로 흘러가기 시작합니다. 어떤 일인지는 자유롭게 정해 이후의 장면을 써주세요.",
+          "tags": [
+            "neutral",
+            "unexpected-change",
+            "progression"
+          ],
+          "weights": {
+            "sl": 1.1,
+            "re": 0.7,
+            "po": 0.8,
+            "ca": 1.1,
+            "gb": 1.0
+          }
+        },
+        {
+          "id": "EVNT_002",
+          "anchor": "event",
+          "prompt": "한 인물이 우연히 예상하지 못한 물건이나 흔적을 발견합니다. 무엇을 발견했는지와 그 뒤의 일을 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "discovery",
+            "object"
+          ],
+          "weights": {
+            "sl": 1.1,
+            "re": 0.7,
+            "po": 0.9,
+            "ca": 1.2,
+            "gb": 0.9
+          }
+        },
+        {
+          "id": "EVNT_003",
+          "anchor": "event",
+          "prompt": "정해둔 계획이 갑자기 바뀌게 되었습니다. 이유와 상황은 자유롭게 정하고, 인물이 어떻게 행동하는지 써주세요.",
+          "tags": [
+            "neutral",
+            "plan-change",
+            "decision"
+          ],
+          "weights": {
+            "sl": 1.1,
+            "re": 0.8,
+            "po": 0.7,
+            "ca": 1.1,
+            "gb": 1.0
+          }
+        },
+        {
+          "id": "EVNT_004",
+          "anchor": "event",
+          "prompt": "기다리고 있던 순간에 예상하지 못한 사람이 나타납니다. 등장한 사람이 누구인지와 이후의 상황을 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "arrival",
+            "interaction"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 0.9,
+            "po": 0.8,
+            "ca": 1.0,
+            "gb": 1.0
+          }
+        },
+        {
+          "id": "EVNT_005",
+          "anchor": "event",
+          "prompt": "하루가 거의 끝나갈 무렵, 인물에게 작은 사건 하나가 생깁니다. 사건의 내용과 그것이 하루에 어떤 변화를 만들었는지 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "daily-life",
+            "small-event"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 0.8,
+            "po": 0.8,
+            "ca": 1.0,
+            "gb": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "introspection",
+      "name": "내면",
+      "description": "생각, 감정, 기억, 판단이 어떻게 전개되고 표현되는지 보는 앵커",
+      "questions": [
+        {
+          "id": "INTR_001",
+          "anchor": "introspection",
+          "prompt": "한 인물이 선택을 앞두고 혼자 생각하고 있습니다. 무엇을 선택해야 하는지는 자유롭게 정하고, 그 순간의 장면을 써주세요.",
+          "tags": [
+            "neutral",
+            "choice",
+            "thinking"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.2,
+            "po": 1.0,
+            "ca": 1.1,
+            "gb": 1.0
+          }
+        },
+        {
+          "id": "INTR_002",
+          "anchor": "introspection",
+          "prompt": "문득 오래전의 일이 떠올랐습니다. 어떤 기억인지, 왜 지금 떠올랐는지는 자유롭게 정해 써주세요.",
+          "tags": [
+            "neutral",
+            "memory",
+            "reflection"
+          ],
+          "weights": {
+            "sl": 1.1,
+            "re": 1.2,
+            "po": 1.0,
+            "ca": 1.2,
+            "gb": 1.1
+          }
+        },
+        {
+          "id": "INTR_003",
+          "anchor": "introspection",
+          "prompt": "한 인물이 누군가 또는 무언가를 기다리고 있습니다. 기다리는 대상과 이유는 자유롭게 정하고, 그 시간을 써주세요.",
+          "tags": [
+            "neutral",
+            "waiting",
+            "reflection"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.2,
+            "po": 1.0,
+            "ca": 1.0,
+            "gb": 1.1
+          }
+        },
+        {
+          "id": "INTR_004",
+          "anchor": "introspection",
+          "prompt": "한 인물이 자신이 얼마 전에 했던 행동을 다시 떠올리고 있습니다. 무슨 일이었는지와 지금 어떤 생각을 하는지 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "retrospection",
+            "self-evaluation"
+          ],
+          "weights": {
+            "sl": 1.1,
+            "re": 1.3,
+            "po": 0.9,
+            "ca": 1.2,
+            "gb": 1.1
+          }
+        },
+        {
+          "id": "INTR_005",
+          "anchor": "introspection",
+          "prompt": "익숙하게 여기던 것이 어느 순간 조금 다르게 느껴집니다. 무엇이 달라졌는지, 인물이 그것을 어떻게 받아들이는지 자유롭게 써주세요.",
+          "tags": [
+            "neutral",
+            "change",
+            "interpretation"
+          ],
+          "weights": {
+            "sl": 1.0,
+            "re": 1.1,
+            "po": 1.0,
+            "ca": 1.2,
+            "gb": 1.2
+          }
+        }
+      ]
+    }
+  ]
+}
